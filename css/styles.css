@@ -1,0 +1,209 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #ffcb05; /* Pokémon Yellow */
+    border-top: 4px solid #d44d3f; /* Pokémon Red */
+    background-image: url('https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/pokemonbig.png'); /* Pokémon-themed background */
+    background-size: cover;
+    background-position: center;
+    padding: 0.5rem 1rem;
+    position: absolute; /* Position it absolutely */
+    bottom: 0; /* Align it to the bottom of the header */
+    width: 100%; /* Make it full-width */
+    display: flex;
+    justify-content: center; /* Center the dropdown menu */
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #ffcb05; /* Pokémon Yellow */
+    color: #3b4cca; /* Pokémon Blue */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Enhanced text readability */
+}
+
+/* Dropdown Content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #d44d3f; /* Pokémon Red */
+    color: #fff;
+}
+
+/* Ensure the header has relative positioning */
+header {
+    padding: 4rem 1rem; /* Increased padding for a larger header */
+    background-image: url('https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/pokemonbig.png'); /* Pokémon-themed background */
+    background-size: cover;
+    background-position: center;
+    height: 450px; /* Increased header height */
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center;
+    color: #fff; /* Ensured text is readable */
+    position: relative; /* Needed for absolute positioning of the nav */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 4rem; /* Increased font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Enhanced text readability */
+}
+
+/* Main Content */
+main {
+    padding: 4rem 2rem; /* Increased padding for more space */
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+/* Page Titles */
+h1 {
+    color: #d44d3f; /* Pokémon Red */
+    border-bottom: 2px solid #ffffff; /* Pokémon Yellow */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+/* Forms and Buttons */
+.form-control {
+    border-radius: 0.25rem;
+    border-color: #d44d3f; /* Pokémon Red */
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: #ffcb05; /* Pokémon Yellow */
+    box-shadow: 0 0 0 0.2rem rgba(255, 203, 5, 0.25);
+}
+
+.btn-primary {
+    background-color: #d44d3f; /* Pokémon Red */
+    border-color: #d44d3f;
+}
+
+.btn-primary:hover {
+    background-color: #b5392d;
+    border-color: #a02b1a;
+}
+
+/* Lists and Links */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+a {
+    text-decoration: none;
+    color: #3b4cca; /* Pokémon Blue */
+}
+
+a:hover {
+    color: #d44d3f; /* Pokémon Red */
+    text-decoration: underline;
+}
+
+/* Pokémon Cards */
+.pokemon-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.pokemon-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.pokemon-card h2 {
+    font-size: 1.5rem;
+    color: #d44d3f; /* Pokémon Red */
+}
+
+/* Pokémon Team List */
+.list-group-item {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #f8f9fa;
+}
+
+.list-group-item:last-child {
+    margin-bottom: 0;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+/* Battle Simulator Results */
+#battle-result {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2a2a2a;
+    padding: 1rem;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
